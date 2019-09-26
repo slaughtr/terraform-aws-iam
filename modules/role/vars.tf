@@ -15,7 +15,7 @@ variable "subject" {
 }
 
 variable "principals" {
-  type        = "list"
+  type        = list(string)
   description = "List of Principals to build the trust relationship with."
 }
 
@@ -33,19 +33,20 @@ variable "effect" {
 }
 
 variable "resources" {
-  type        = "list"
+  type        = list(string)
   description = "List of affected resources."
   default     = ["*"]
 }
 
 variable "actions" {
-  type        = "list"
+  type        = list(string)
   description = "List of allowed actions."
   default     = []
 }
 
 variable "policies" {
-  type        = "list"
+  type        = list(string)
   description = "ARNs of all managed policies ti attach ti this role."
   default     = []
 }
+
