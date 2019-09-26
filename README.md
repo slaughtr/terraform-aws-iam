@@ -1,5 +1,7 @@
 # terraform-aws-iam
 
+> Forked this to update to 0.12, only necessary changes were made to the tf - enjoy!
+
 This repository is a set of Terraform modules for defining IAM resources.
 
 ## Quickstart
